@@ -86,33 +86,33 @@ const procRenderSep = (size = 64, callback = (href) => { }, progress = prog => {
   updateMaterial();
   procCamera.rotateY(-Math.PI / 2);
   procRenderer.render(mainScene, procCamera);
-  storeBlobsSep('px', callback, progress);
+  storeBlobsSep('ft', callback, progress);
   //-x
   updateMaterial();
   procCamera.rotateY(Math.PI);
   procRenderer.render(mainScene, procCamera);
-  storeBlobsSep('nx', callback, progress);
+  storeBlobsSep('bk', callback, progress);
   //+y
   updateMaterial();
   procCamera.rotateY(-Math.PI / 2);
   procCamera.rotateX(Math.PI / 2);
   procRenderer.render(mainScene, procCamera);
-  storeBlobsSep('py', callback, progress);
+  storeBlobsSep('up', callback, progress);
   //-y
   updateMaterial();
   procCamera.rotateX(-Math.PI);
   procRenderer.render(mainScene, procCamera);
-  storeBlobsSep('ny', callback, progress);
+  storeBlobsSep('dn', callback, progress);
   //+z
   updateMaterial();
   procCamera.rotateX(Math.PI / 2);
   procRenderer.render(mainScene, procCamera);
-  storeBlobsSep('pz', callback, progress);
+  storeBlobsSep('rt', callback, progress);
   //-z
   updateMaterial();
   procCamera.rotateY(Math.PI);
   procRenderer.render(mainScene, procCamera);
-  storeBlobsSep('nz', callback, progress);
+  storeBlobsSep('lf', callback, progress);
 
   // packBlobs(callback);
 }
