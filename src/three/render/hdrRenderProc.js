@@ -93,38 +93,38 @@ const hdrProcRenderSep = (size = 64, callback = (href) => { }, progress = prog =
   procCamera.rotateY(-Math.PI / 2);
   hdrProcRenderer.render(hdrScene, procCamera);
   hdrProcRenderer.render(hdrScene, procCamera, hdrRenderTarget);
-  storeBlobsSep('px', callback, progress);
+  storeBlobsSep('ft', callback, progress);
   //-x
   updateMaterial();
   procCamera.rotateY(Math.PI);
   hdrProcRenderer.render(hdrScene, procCamera);
   hdrProcRenderer.render(hdrScene, procCamera, hdrRenderTarget);
-  storeBlobsSep('nx', callback, progress);
+  storeBlobsSep('bk', callback, progress);
   //+y
   updateMaterial();
   procCamera.rotateY(-Math.PI / 2);
   procCamera.rotateX(Math.PI / 2);
   hdrProcRenderer.render(hdrScene, procCamera);
   hdrProcRenderer.render(hdrScene, procCamera, hdrRenderTarget);
-  storeBlobsSep('py', callback, progress);
+  storeBlobsSep('up', callback, progress);
   //-y
   updateMaterial();
   procCamera.rotateX(-Math.PI);
   hdrProcRenderer.render(hdrScene, procCamera);
   hdrProcRenderer.render(hdrScene, procCamera, hdrRenderTarget);
-  storeBlobsSep('ny', callback, progress);
+  storeBlobsSep('dn', callback, progress);
   //+z
   updateMaterial();
   procCamera.rotateX(Math.PI / 2);
   hdrProcRenderer.render(hdrScene, procCamera);
   hdrProcRenderer.render(hdrScene, procCamera, hdrRenderTarget);
-  storeBlobsSep('pz', callback, progress);
+  storeBlobsSep('rt', callback, progress);
   //-z
   updateMaterial();
   procCamera.rotateY(Math.PI);
   hdrProcRenderer.render(hdrScene, procCamera);
   hdrProcRenderer.render(hdrScene, procCamera, hdrRenderTarget);
-  storeBlobsSep('nz', callback, progress);
+  storeBlobsSep('lf', callback, progress);
 
   // packBlobs(callback);
 }
